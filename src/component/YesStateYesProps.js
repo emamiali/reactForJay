@@ -14,7 +14,7 @@ class YesStateYesProps extends Component {
 
   render() {
     return (
-      <div style={{background: "purple"}}>
+      <div style={{background: "purple", padding: '10px'}}>
         <p>{this.state.text}</p>
         <p>{this.props.text}</p>
       </div>

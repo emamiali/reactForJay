@@ -13,17 +13,15 @@ class IamGoingToBind extends Component {
 
   }
   handleClick() {
-    const { counter } = this.state;
     this.setState({counter : this.state.counter += 1});
-    console.log(counter);
+    console.log('this is binded: ', this.state.counter);
   }
 
   render() {
     return (
-      <div>
-        {console.log('this is this: ', this)}
-        <button onClick={this.handleClick}>
-          Click!!!!!
+      <div  style={{ margin: '10px', padding: '10px'}}>
+        <button onClick={this.handleClick} style={{fontSize: '20px'}}>
+          Binded to 'this'
         </button>
       </div>
     );

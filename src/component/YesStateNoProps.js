@@ -10,7 +10,7 @@ class YesStateNoProps extends Component {
   render() {
     console.log(this.state.someData);
     return (
-      <div style={{background: "red"}}>
+      <div style={{background: "red", padding: '10px'}}>
         <p>Yes State, No Props</p>
         {this.state.someData}
       </div>

@@ -4,6 +4,7 @@ import NoPropsNoState from './component/NoPropsNoState';
 import NoStateYesProps from './component/NoStateYesProps';
 import YesStateYesProps from './component/YesStateYesProps';
 import IamGoingToBind from './component/IamGoingToBind';
+import IamNotGoingToBind from './component/IamNotGoingToBind';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <YesStateYesProps text={"I am from props"} />
         <NoStateYesProps  aProp={"Chicken"} />
         <IamGoingToBind />
+        <IamNotGoingToBind />
       </div>
     );
   }
